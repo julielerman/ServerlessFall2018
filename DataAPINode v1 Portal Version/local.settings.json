@@ -1,0 +1,16 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "WEBSITE_SLOT_NAME": "Production",
+    "FUNCTIONS_EXTENSION_VERSION": "~1",
+    "ScmType": "None",
+    "WEBSITE_AUTH_ENABLED": "False",
+    "TwilioAccountSid": "***",
+    "TwilioAuthToken": "***",
+    "AzureWebJobsDashboard": "DefaultEndpointsProtocol=https;AccountName=***;AccountKey=***",
+    "WEBSITE_NODE_DEFAULT_VERSION": "6.5.0",
+    "WEBSITE_SITE_NAME": "DataAPINode",
+    "lermanconference_DOCUMENTDB": "AccountEndpoint=***;AccountKey=***",
+    "AzureWebJobsStorage": "DefaultEndpointsProtocol=https;AccountName=***;AccountKey=***"
+  }
+}

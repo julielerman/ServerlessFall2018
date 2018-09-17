@@ -1,0 +1,25 @@
+{
+  "bindings": [
+    {
+      "authLevel": "anonymous",
+      "type": "httpTrigger",
+      "direction": "in",
+      "name": "req"
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "res"
+    },
+    {
+      "type": "cosmosDB",
+      "name": "outputDocument",
+      "databaseName": "dataapidemonode2",
+      "collectionName": "subscribers2",
+      "createIfNotExists": true,
+      "connectionStringSetting": "lermanconference_DOCUMENTDB",
+      "direction": "out"
+    }
+  ],
+  "disabled": false
+}

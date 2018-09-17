@@ -1,0 +1,34 @@
+{
+  "bindings": [
+    {
+      "type": "cosmosDBTrigger",
+      "name": "documents",
+      "direction": "in",
+      "leaseCollectionName": "leases",
+      "connectionStringSetting": "lermanconference_DOCUMENTDB",
+      "databaseName": "dataapidemonode",
+      "collectionName": "sampsoneatsnode",
+      "createLeaseCollectionIfNotExists": true
+    },
+    {
+      "type": "documentDB",
+      "name": "subscriberList",
+      "databaseName": "dataapidemonode",
+      "collectionName": "subscribers",
+      "connection": "lermanconference_DOCUMENTDB",
+      "direction": "in",
+      "sqlQuery": "select c.phone from c"
+    },
+    {
+      "type": "twilioSms",
+      "name": "message",
+      "accountSid": "TwilioAccountSid",
+      "authToken": "TwilioAuthToken",
+      "to": "###",
+      "from": "###",
+      "body": "test from twiio",
+      "direction": "out"
+    }
+  ],
+  "disabled": false
+}
